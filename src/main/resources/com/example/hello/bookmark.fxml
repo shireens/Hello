@@ -32,12 +32,13 @@
 <AnchorPane prefHeight="1080" prefWidth="1920.0" style="-fx-background-color: #0f0e26;" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hello.BookmarkController">
 
     <Label fx:id="welcomeText"/>
+    <Label fx:id="testText"/>
     <!--<Button text="Hello!" onAction="#onHelloButtonClick"/>-->
 
     <children>
         <TextField fx:id="searchText" layoutX="300.0" layoutY="33.0" prefWidth="200.0"/>
         <!--ComboBox fx:id="searchChoice" layoutX="137.0" layoutY="33.0" prefHeight="24.0" prefWidth="78.0" /-->
-        <ChoiceBox value="Movies" layoutX="24.0" layoutY="33.0" prefHeight="24.0" prefWidth="78.0">
+        <ChoiceBox fx:id="firstChoiceBox" value="Movies" layoutX="24.0" layoutY="33.0" prefHeight="24.0" prefWidth="78.0" onAction="#onChoiceClick">
             <items>
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="Movies" />
@@ -46,7 +47,7 @@
                 </FXCollections>
             </items>
         </ChoiceBox>
-        <ChoiceBox value="Search by Genre" layoutX="125.0" layoutY="33.0" prefHeight="24.0" prefWidth="150.0"><!--fix x and width-->
+        <ChoiceBox fx:id="secondChoiceBox" value="Search by Genre" layoutX="125.0" layoutY="33.0" prefHeight="24.0" prefWidth="150.0" onAction="#onSecondChoiceClick"><!--fix x and width-->
             <items>
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="Movie-Search by Genre" />
