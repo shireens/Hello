@@ -32,7 +32,7 @@
 <AnchorPane prefHeight="1080" prefWidth="1920.0" style="-fx-background-color: #0f0e26;" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hello.BookmarkController">
 
     <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <!--<Button text="Hello!" onAction="#onHelloButtonClick"/>-->
 
     <children>
         <TextField fx:id="searchText" layoutX="300.0" layoutY="33.0" prefWidth="200.0"/>
@@ -56,7 +56,7 @@
                 </FXCollections>
             </items>
         </ChoiceBox>
-        <Button fx:id="searchButton" layoutX="520.0" layoutY="33.0" mnemonicParsing="false" text="Search" />
+        <Button fx:id="searchButton" layoutX="520.0" layoutY="33.0" mnemonicParsing="false" text="Search" onAction="#onSearchButtonClick"/>
 
         <ScrollPane layoutX="321.0" layoutY="85.0" prefHeight="284.0" prefWidth="263.0">
             <content>
