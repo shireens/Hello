@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
@@ -43,7 +42,6 @@
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="Movies" />
                     <String fx:value="Books" />
-                    <String fx:value="Blah" />
                 </FXCollections>
             </items>
         </ChoiceBox>
@@ -51,9 +49,9 @@
             <items>
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="Movie-Search by Genre" />
-                    <String fx:value="Movie-Search by Director" />
+                    <String fx:value="Movie-Search by Actor" />
                     <String fx:value="Book-Search by Genre" />
-                    <String fx:value="Book-PLACEHOLDER" />
+                    <String fx:value="Book-Search by Author" />
                 </FXCollections>
             </items>
         </ChoiceBox>
@@ -86,5 +84,4 @@
             </image>
         </ImageView>
     </children>
-
 </AnchorPane>
