@@ -28,6 +28,7 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
+<?import javafx.scene.control.ListView?>
 <AnchorPane prefHeight="1080" prefWidth="1920.0" style="-fx-background-color: #0f0e26;" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hello.BookmarkController">
 
     <Label fx:id="welcomeText"/>
@@ -37,7 +38,7 @@
     <children>
         <TextField fx:id="searchText" layoutX="300.0" layoutY="33.0" prefWidth="200.0"/>
         <!--ComboBox fx:id="searchChoice" layoutX="137.0" layoutY="33.0" prefHeight="24.0" prefWidth="78.0" /-->
-        <ChoiceBox fx:id="firstChoiceBox" value="Movies" layoutX="24.0" layoutY="33.0" prefHeight="24.0" prefWidth="78.0" onAction="#onChoiceClick">
+        <ChoiceBox fx:id="firstChoiceBox" value="Type" layoutX="24.0" layoutY="33.0" prefHeight="24.0" prefWidth="78.0" onAction="#onChoiceClick">
             <items>
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="Movies" />
@@ -45,11 +46,12 @@
                 </FXCollections>
             </items>
         </ChoiceBox>
-        <ChoiceBox fx:id="secondChoiceBox" value="Search by Genre" layoutX="125.0" layoutY="33.0" prefHeight="24.0" prefWidth="150.0" onAction="#onSecondChoiceClick"><!--fix x and width-->
+        <ChoiceBox fx:id="secondChoiceBox" value="Search by" layoutX="125.0" layoutY="33.0" prefHeight="24.0" prefWidth="150.0" onAction="#onSecondChoiceClick"><!--fix x and width-->
             <items>
                 <FXCollections fx:factory="observableArrayList">
-                    <String fx:value="Movie-Search by Genre" />
+                    <String fx:value="Movie-Search by Title" />
                     <String fx:value="Movie-Search by Actor" />
+                    <String fx:value="Book-Search by Title" />
                     <String fx:value="Book-Search by Genre" />
                     <String fx:value="Book-Search by Author" />
                 </FXCollections>
@@ -57,11 +59,11 @@
         </ChoiceBox>
         <Button fx:id="searchButton" layoutX="520.0" layoutY="33.0" mnemonicParsing="false" text="Search" onAction="#onSearchButtonClick"/>
 
-        <ScrollPane layoutX="24.0" layoutY="85.0" prefHeight="284.0" prefWidth="554.0">
-            <content>
+        <ListView fx:id="myListView" layoutX="24.0" layoutY="85.0" prefHeight="284.0" prefWidth="554.0">
+           <!-- <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="287.0" prefWidth="557.0" style="-fx-background-color: #1e1e33;" />
-            </content>
-        </ScrollPane>
+            </content> -->
+        </ListView>
 
         <ScrollPane layoutX="314.0" layoutY="388.0" prefHeight="224.0" prefWidth="263.0">
             <content>
