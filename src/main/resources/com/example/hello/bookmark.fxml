@@ -39,9 +39,11 @@
         <ListView fx:id="myListView" layoutX="24.0" layoutY="85.0" prefHeight="284.0" prefWidth="554.0">
         </ListView>
 
+        <Label layoutX="118.0" layoutY="420.0" text="My Book List" textFill="white"/>
         <ListView fx:id="myBookList" layoutX="24.0" layoutY="440.0" prefHeight="224.0" prefWidth="263.0">
         </ListView>
 
+        <Label layoutX="410.0" layoutY="420.0" text="My Movie List" textFill="white"/>
         <ListView fx:id="myMovieList" layoutX="314.0" layoutY="440.0" prefHeight="224.0" prefWidth="263.0">
         </ListView>
 
