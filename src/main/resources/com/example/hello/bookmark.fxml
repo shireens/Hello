@@ -57,26 +57,32 @@
         </ChoiceBox>
         <Button fx:id="searchButton" layoutX="520.0" layoutY="33.0" mnemonicParsing="false" text="Search" onAction="#onSearchButtonClick"/>
 
-        <ScrollPane layoutX="321.0" layoutY="85.0" prefHeight="284.0" prefWidth="263.0">
+        <ScrollPane layoutX="24.0" layoutY="85.0" prefHeight="284.0" prefWidth="554.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="287.0" prefWidth="557.0" style="-fx-background-color: #1e1e33;" />
+            </content>
+        </ScrollPane>
+
+        <ScrollPane layoutX="314.0" layoutY="388.0" prefHeight="224.0" prefWidth="263.0">
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="287.0" prefWidth="266.0" style="-fx-background-color: #1e1e33;" />
             </content>
         </ScrollPane>
 
-        <Button fx:id="favouriteButtonBook" layoutX="400.0" layoutY="400.0" mnemonicParsing="false" text="Add To Favourites" />
-        <Button fx:id="favouriteButtonMovie" layoutX="100.0" layoutY="400.0" mnemonicParsing="false" text="Add To Favourites" />
-
-        <Button fx:id="saveBook" layoutX="400.0" layoutY="450.0" mnemonicParsing="false" text="Save To List" />
-        <Button fx:id="saveMovie" layoutX="100.0" layoutY="450.0" mnemonicParsing="false" text="Save To List" />
-
-        <Button fx:id="removeBook" layoutX="400.0" layoutY="500.0" mnemonicParsing="false" text="Remove" />
-        <Button fx:id="removeMovie" layoutX="100.0" layoutY="500.0" mnemonicParsing="false" text="Remove" />
-
-        <ScrollPane layoutX="24.0" layoutY="85.0" prefHeight="284.0" prefWidth="263.0">
+        <ScrollPane layoutX="24.0" layoutY="388.0" prefHeight="224.0" prefWidth="263.0">
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="287.0" prefWidth="266.0" style="-fx-background-color: #1e1e33;" />
             </content>
         </ScrollPane>
+
+        <Button fx:id="favouriteButtonBook" layoutX="400.0" layoutY="700.0" mnemonicParsing="false" text="Add To Favourites" />
+        <Button fx:id="favouriteButtonMovie" layoutX="100.0" layoutY="700.0" mnemonicParsing="false" text="Add To Favourites" />
+
+        <Button fx:id="saveBook" layoutX="400.0" layoutY="750.0" mnemonicParsing="false" text="Save To List" />
+        <Button fx:id="saveMovie" layoutX="100.0" layoutY="750.0" mnemonicParsing="false" text="Save To List" />
+
+        <Button fx:id="removeBook" layoutX="400.0" layoutY="800.0" mnemonicParsing="false" text="Remove" />
+        <Button fx:id="removeMovie" layoutX="100.0" layoutY="800.0" mnemonicParsing="false" text="Remove" />
 
         <ImageView fitHeight="56.0" fitWidth="54.0" layoutX="14.0">
             <image>
